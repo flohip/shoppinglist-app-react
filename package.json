@@ -8,8 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "eslint": "^8.10.0",
+    "htmlhint": "^1.1.2",
+    "prettier": "^2.5.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "stylelint": "^14.5.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

@@ -3,9 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "test": "npm run htmlhint && npm run stylelint && npm run prettier:check && npm run eslint",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "htmlhint": "npx htmlhint \"**/*.html\"",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "eslint": "npx eslint \"**/*.js\""
   },
   "dependencies": {
     "react": "^17.0.2",

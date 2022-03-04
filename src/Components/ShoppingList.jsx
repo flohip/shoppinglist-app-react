@@ -1,26 +1,15 @@
+import { useState, useEffect } from 'react';
 import './ShoppingList.css'
-import {items} from '../example-items'
 
-const num = 0;
-export function ShoppingList(num) {
-    const databaseArray = items
-    .map((shoppingData) => {
-        return shoppingData.name.de;
-    }) 
-    console.log( databaseArray.filter((item, num) => {
-        return item[num]; 
-    }))
-    console.log(databaseArray);
-    return databaseArray;
-    // return (
-    //   <ul className="App">
-    //       <li className="items"></li>
-    //       <li className="items"></li>
-    //       <li className="items"></li>
-    //       <li className="items"></li>
-    //       <li className="items"></li>
-    //   </ul>
-    // )
-  }
-  
-  
+const url='https://fetch-me.vercel.app/api/shopping/items';
+
+export function ShoppingList(){
+    useEffect(() =>{
+        const fetchData
+        
+    },[])
+}
+
+ShoppingList();
+
+

@@ -1,7 +1,30 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-  background-color: orange;
+.App {
+  background-image: url('https://edeka-spanjolli.de/wp-content/uploads/2021/07/Eingangsbereich-1024x683.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-size: 1rem;
+}
+
+.shopping_List {
+  /* background-color: purple; */
+  display: grid;
+  grid-template-columns: 800px;
+  grid-template-rows: 3fr 1fr 3fr 3fr;
+  width: 800px;
+  height: inherit;
+  min-width: var(--min-width);
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }

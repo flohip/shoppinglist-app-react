@@ -1,0 +1,143 @@
+h1 {
+  color: var(--bright-color);
+  text-shadow: -1px 0 var(--dark-color), 0 1px var(--dark-color),
+    1px 0 var(--dark-color), 0 -1px var(--dark-color);
+  font-size: 3rem;
+}
+
+.search_Bar {
+  background: linear-gradient(
+    0deg,
+    rgba(4, 115, 213, 1) 0%,
+    rgba(98, 22, 212, 1) 100%
+  );
+  min-width: 300px;
+  min-height: 60px;
+  justify-self: center;
+  box-shadow: 0 0 10px 5px black;
+  align-self: center;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.search_Bar > label {
+  color: white;
+}
+
+.suggestion_List {
+  min-height: calc(var(--min-width) * 1);
+  max-height: calc(var(--min-width) * 2);
+  /* background-color: yellow; */
+  /* background: linear-gradient(
+    90deg,
+    rgba(4, 115, 213, 1) 0%,
+    rgba(98, 22, 212, 1) 100%
+  ); */
+  list-style-type: none;
+  /* box-shadow: 0 0 10px 5px black; */
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.suggestion_List_Item {
+  background: rgb(0, 162, 179);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 162, 179, 1) 0%,
+    rgba(176, 38, 249, 1) 100%
+  );
+  color: var(--bright-color);
+  width: calc(var(--min-width) / 5 * 2);
+  height: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestion_List_Item:hover {
+  cursor: pointer;
+  color: var(--dark-color);
+  box-shadow: 0 0 2px 1px black;
+
+  background: rgb(187, 195, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(187, 195, 255, 1) 0%,
+    rgba(182, 255, 172, 1) 100%
+  );
+}
+
+.suggestion_List_Item:active {
+  cursor: pointer;
+  color: var(--dark-color);
+  background: var(--click-color);
+}
+
+.active_List {
+  max-height: calc(var(--min-width) * 2);
+  /* background-color: yellow; */
+
+  list-style-type: none;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.active_List_Item {
+  background: rgb(0, 162, 179);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(222, 222, 0, 1) 100%
+  );
+  color: var(--bright-color);
+  width: calc(var(--min-width) / 5 * 2);
+  height: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active_List_Item:hover {
+  cursor: pointer;
+  color: var(--dark-color);
+  box-shadow: 0 0 2px 1px black;
+
+  background: rgb(187, 195, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(187, 195, 255, 1) 0%,
+    rgba(182, 255, 172, 1) 100%
+  );
+}
+
+.active_List_Item:active {
+  cursor: pointer;
+  color: var(--dark-color);
+  background: var(--click-color);
+}
+
+.inactive_List {
+  /* background-color: turquoise; */
+  height: calc(var(--min-width) / 2);
+  max-height: calc(var(--min-width) * 2);
+
+  width: inherit;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+}

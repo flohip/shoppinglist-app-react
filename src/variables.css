@@ -1,0 +1,25 @@
+:root {
+  --dark-color: black;
+  --bright-color: white;
+  --click-color: hotpink;
+
+  --red-color: rgb(255, 100, 100);
+  --red-hover-color: rgb(200, 50, 50);
+
+  --green-color: rgb(100, 255, 100);
+  --green-hover-color: rgb(50, 200, 50);
+
+  --blue-color: rgb(100, 100, 255);
+  --blue-hover-color: rgb(50, 50, 200);
+
+  --orange-color: rgb(255, 100, 0);
+  --orange-hover-color: rgb(200, 50, 0);
+
+  --searchbar-color: linear-gradient(
+    0deg,
+    rgba(4, 115, 213, 1) 0%,
+    rgba(98, 22, 212, 1) 100%
+  );
+
+  --min-width: 300px;
+}
